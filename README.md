@@ -6,19 +6,19 @@
 This is a simple landing page for a site that accepts a user to input his/her date of birth,and gives the user his/her Akan name.
 Akan names are derived from Ghanian culture.Children are given their first names as a 'day name'.This name corresponds to the day of the week in which they were born.
 ## Setup/Installation Requirements
-* [Fork my code]()
-* [Deloyed-page](https://devseme.github.io/Ghana-Akan-Naming-website/)
+* [Fork my code](https://github.com/devseme/Ghana-Akan-Naming-website.git)
+* Also run my deployed project at[Deloyed-page](https://devseme.github.io/Ghana-Akan-Naming-website/)
 ## BEHAVIOURAL DRIVEN DEVELOPMENT
 1.Form displays in which a user enters date and gender.
  *INPUT-A user enters his/her birthdate.
- 2. INPUT-A user entershis/her gender.
- 3. OUTPUT-a user gets to see his/her Akan name
+ * INPUT-A user entershis/her gender.
+ * OUTPUT-a user gets to see his/her Akan name
 2.Displays error message if date form left blank
-              * INPUT-""
-              * OUTPUT-input required/NaN
+   * INPUT-""
+   * OUTPUT-input required/NaN
 3.Displays error message if Gender not choosen
-              * INPUT-""
-              * OUTPUT-Displays error message            
+    * INPUT-""
+    * OUTPUT-Displays error message            
 ## Known Bugs
 running the given function on JS File
 ## Technologies Used
