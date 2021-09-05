@@ -6,7 +6,7 @@
 This is a simple landing page for a site that accepts a user to input his/her date of birth,and gives the user his/her Akan name.
 Akan names are derived from Ghanian culture.Children are given their first names as a 'day name'.This name corresponds to the day of the week in which they were born.
 ## Setup/Installation Requirements
-* No set-up requirements.Run the index.html file on your browser
+* [Fork my code]()
 * [Deloyed-page](https://devseme.github.io/Ghana-Akan-Naming-website/)
 ## BEHAVIOURAL DRIVEN DEVELOPMENT
 1.Form displays in which a user enters date and gender.
