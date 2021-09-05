@@ -1,10 +1,10 @@
 .header{
     height: 270px;
     width:100%;
-    background-color: #316A74;
+    background-color: #158566;
 }
 .header h1{
-    color:#0F0F0F;
+    color:#FFFF;
     margin-left: 430px;
 }
 .header p{
@@ -25,13 +25,50 @@ float:left;
     margin-top: -57px;
 }
 .description{
-        background-color: #DD7F73;
-        width: 60%;
-        height: 250px;
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        margin-left: 300px;
- }
+    background-color: #0F0F0F;
+    width: 55%;
+    height: 400px;
+    display:flex;
+    direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFF;
+}
+.confirm{
+    width: 55%;
+    height: 400px;
+    background-color: #E8BEE7;
+    margin-left: 300px;
+    align-items: center;
+    margin-left: 750px;
+    margin-top: -400px;
+
+}
+form{
+    align-items: center;
+    padding:10px;
+}
+input{
+    display:block;
+    width:auto;
+    padding: 10px;
+    margin-left:20px;
+    border:2px solid black;
+    border-radius: 20px;
+}
+label{
+    display:block;
+    margin:0.5rem;
+    
+}
+#submitBtn{
+    background-color: #343050;
+    color:white;
+    margin:1rem;
+    width:auto;
+    text-transform: uppercase;
+    cursor:pointer;
+    font-size: 20px;
+
+}
