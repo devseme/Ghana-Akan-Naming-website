@@ -21,10 +21,21 @@ Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD 
  */
 
   function birthDay(){
-       var DD=parsefloat(getElementById("").value);
-       var MM=parsefloat(getElementById("").value);
-       var YY=parsefloat(getElementById("").value);
+       let DD=parsefloat(getElementById("day").value);
+       let MM=parsefloat(getElementById("month").value);
+       let YY=parsefloat(getElementById("year").value);
 
 
-       var weekDay =( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7;
+       let weekDay =( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7;
+       console.log(weekDay);
+            
+         document.getElementById("").innerHTML=math.Round(weekDay);
+         
+         /* Array for names*/
+         let maleNames=["Kwasi","Kwadwo","Kwabea","kwaku","Yaw","Kofi"];
+         let femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ana"];
+            
+         let choice=document.getElementById("").value;
+         
+
   }
