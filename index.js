@@ -38,5 +38,19 @@ Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD 
          let choice=document.getElementById("").value;
 
          /*conditional statement if*/
+           if((choice==="male" &&(DD>0 && DD<31) && (MM>0 && MM<12) &&YY>=1))
+                  
+                console.log(maleNames(math.Round(weekDay)));
+
+             else if((choice==="female" &&(DD>0 && DD<31) && (MM>0 && MM<12) &&YY>=1))
+                  
+                console.log(femaleNames(math.Round(weekDay)));
+
+               else{
+                   console.log("You entered invalid data!")
+
+                      alert("The data you entered is invalid.Try again!")
+                       
+               }
 
   }

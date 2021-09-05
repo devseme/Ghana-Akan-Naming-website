@@ -37,13 +37,17 @@ float:left;
 }
 .confirm{
     width: 55%;
-    height: 400px;
+    height: auto;
     background-color: #E8BEE7;
     margin-left: 300px;
     align-items: center;
     margin-left: 750px;
     margin-top: -400px;
+    
 
+}
+.confirm-2{
+    margin-left: 100px;
 }
 form{
     align-items: center;
@@ -52,7 +56,6 @@ form{
 input{
     display:block;
     width:auto;
-    padding: 10px;
     margin-left:20px;
     border:2px solid black;
     border-radius: 20px;
