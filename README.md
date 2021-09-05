@@ -7,7 +7,7 @@ This is a simple landing page for a site that accepts a user to input his/her da
 ## Setup/Installation Requirements
 * No set-up requirements.Run the index.html file on your browser
 
-* [Deloyed-page](https://d)
+* [Deloyed-page](https://devseme.github.io/Ghana-Akan-Naming-website/)
 ## Known Bugs
 No known bugs
 ## Technologies Used
