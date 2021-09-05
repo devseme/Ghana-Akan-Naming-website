@@ -16,7 +16,6 @@
     margin-left: 380px;
     margin-top: 70px;
     border-radius: 15px;
-    
 }
 #flag{
 float:left;
@@ -24,4 +23,15 @@ float:left;
 #accra{
     float:right;
     margin-top: -57px;
-};
+}
+.description{
+        background-color: #DD7F73;
+        width: 60%;
+        height: 250px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 300px;
+ }
