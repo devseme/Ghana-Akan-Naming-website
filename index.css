@@ -1,0 +1,27 @@
+.header{
+    height: 270px;
+    width:100%;
+    background-color: #316A74;
+}
+.header h1{
+    color:#0F0F0F;
+    margin-left: 430px;
+}
+.header p{
+    color:#0F0F0F;
+    font-size: 20px;
+    width:600px;
+    height: auto;
+    background-color: #D6EDED;
+    margin-left: 380px;
+    margin-top: 70px;
+    border-radius: 15px;
+    
+}
+#flag{
+float:left;
+}
+#accra{
+    float:right;
+    margin-top: -57px;
+};
