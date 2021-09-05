@@ -6,8 +6,9 @@
 This is a simple landing page for a site that accepts a user to input his/her date of birth,and gives the user his/her Akan name.
 ## Setup/Installation Requirements
 * No set-up requirements.Run the index.html file on your browser
-
 * [Deloyed-page](https://devseme.github.io/Ghana-Akan-Naming-website/)
+## BEHAVIOURAL DRIVEN DEVELOPMENT
+
 ## Known Bugs
 No known bugs
 ## Technologies Used
