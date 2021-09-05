@@ -20,7 +20,7 @@
   </div>
 
 <div class="description">
-    <h2>MALE</h2>
+    <h2>MALE NAMES:</h2>
     <ol>
         <li>Sunday: Kwasi</li>
         <li>Monday: Kwadwo</li>
@@ -30,7 +30,7 @@
         <li>Friday: Kofi</li>
         <li>Saturday: Kwame</li>
     </ol>
-    <h2>FEMALE</h2>
+    <h2>FEMALE NAMES:</h2>
     <ol>
         <li>Sunday: Akosua</li>
         <li>Monday: Adwoa</li>
@@ -41,6 +41,30 @@
         <li>Saturday: Ama</li>
     </ol>
     
+</div>
+<div class="confirm">
+    
+    
+    <form action="" method="post">
+
+        <div class="day">
+            <label for="day">Enter your Birthday date here:</label>
+        <input name="day" type="text" id="day" placeholder="D.O.B" max="31" min="1"  required>
+        </div>
+        <div class="month">
+            <label for="month">Enter month born here:</label>
+        <input name="month" type="text" id="month" placeholder="Month Born" max="12" min="1"  required>
+        </div>
+        <div class="year">
+            <label for="year">Enter your year of Birth here:</label>
+        <input name="year" type="text" id="year" placeholder="Y.O.B" required>
+        </div>
+
+        
+        <button type="submit" id="submitBtn" onclick="day()">SUBMIT</button>
+        </form>
+
+        <p>Your day/name is:</p>
 </div>
     
 </body>
