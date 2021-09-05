@@ -6,8 +6,8 @@
 This is a simple landing page for a site that accepts a user to input his/her date of birth,and gives the user his/her Akan name.
 ## Setup/Installation Requirements
 * No set-up requirements.Run the index.html file on your browser
-* [Design-page](https://www.figma.com/file/A815GxuPeFfDFEsMM1wbNu/devseme-portfolio?node-id=1%3A2)
-* [Deloyed-page](https://devseme.github.io/PORTFOLIO/#contact)
+
+* [Deloyed-page](https://d)
 ## Known Bugs
 No known bugs
 ## Technologies Used
