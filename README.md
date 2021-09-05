@@ -10,15 +10,18 @@ Akan names are derived from Ghanian culture.Children are given their first names
 * Also run my deployed project at[Deloyed-page](https://devseme.github.io/Ghana-Akan-Naming-website/)
 ## BEHAVIOURAL DRIVEN DEVELOPMENT
 1.Form displays in which a user enters date and gender.
- *INPUT-A user enters his/her birthdate.
+ 
  * INPUT-A user entershis/her gender.
  * OUTPUT-a user gets to see his/her Akan name
+ * 
 2.Displays error message if date form left blank
    * INPUT-""
    * OUTPUT-input required/NaN
+   * 
 3.Displays error message if Gender not choosen
     * INPUT-""
-    * OUTPUT-Displays error message            
+    * OUTPUT-Displays error message  
+    
 ## Known Bugs
 running the given function on JS File
 ## Technologies Used
