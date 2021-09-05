@@ -13,7 +13,7 @@ Akan names are derived from Ghanian culture.Children are given their first names
  
  * INPUT-A user entershis/her gender.
  * OUTPUT-a user gets to see his/her Akan name
- * 
+ 
 2.Displays error message if date form left blank
    * INPUT- ""
    * OUTPUT- input required/NaN
