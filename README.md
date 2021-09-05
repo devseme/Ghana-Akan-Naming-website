@@ -9,10 +9,10 @@ Akan names are derived from Ghanian culture.Children are given their first names
 * No set-up requirements.Run the index.html file on your browser
 * [Deloyed-page](https://devseme.github.io/Ghana-Akan-Naming-website/)
 ## BEHAVIOURAL DRIVEN DEVELOPMENT
-1. Form displays in which a user enters date and gender.
-              * INPUT-A user enters his/her birthdate.
-              * INPUT-A user entershis/her gender.
-              * OUTPUT-a user gets to see his/her Akan name
+### Form displays in which a user enters date and gender.
+ 1.INPUT-A user enters his/her birthdate.
+ 2. INPUT-A user entershis/her gender.
+ 3. OUTPUT-a user gets to see his/her Akan name
 2.Displays error message if date form left blank
               * INPUT-""
               * OUTPUT-input required/NaN
