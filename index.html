@@ -49,7 +49,7 @@
     <form action="" method="post"></form>
 
         <div class="day">
-            <label for="day">Enter your Birthday date here:</label>
+            <label for="day">Enter your day of birth here:</label>
         <input name="day" type="text" id="day" placeholder="D.O.B" max="31" min="1"  required>
         </div>
         <div class="month">
@@ -57,18 +57,18 @@
         <input name="month" type="text" id="month" placeholder="Month Born" max="12" min="1"  required>
         </div>
         <div class="year">
-            <label for="year">Enter your year of Birth here:</label>
+            <label for="year">Enter  year of Birth here:</label>
         <input name="year" type="text" id="year" placeholder="Y.O.B" required>
         </div>
     <div class="confirm-2">
-        <div id="select">
+       
         <p>Please select your Gender:</p>
-        
+        <div id="select">
          <input type="radio" id="male" name="gender" value="male">
         <label for="male">Male</label>
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Female</label>
-        <button type="submit" id="submitBtn" onclick="birthDay()">SUBMIT</button>
+        <button type="button" id="submitBtn" onclick="birthDay()">SUBMIT</button>
     </div>
 
         <p id="result">Your day of birth is:</p>
