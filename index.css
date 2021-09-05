@@ -49,6 +49,10 @@ float:left;
 .confirm-2{
     margin-left: 100px;
 }
+.confirm-2 input{
+    display: inline;
+}
+
 form{
     align-items: center;
     padding:10px;

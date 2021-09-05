@@ -9,16 +9,15 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-  <div class=header>
+<div class=header>
       <img id="flag" src="./IMAGES/Ghana-flag.png" height="250px" width="300px">
       <h1>AKAN NAMING SYSYTEM</h1>
       <img id="accra" src="./IMAGES/accra -centre.jpeg" height="250px" width="300px">
       <p>Akan names are derived from Ghanian culture.Children are given their first names as a 'day name'.
           This name corresponds to the day of the week in which they were born.
       </p>
-
-  </div>
-
+</div>
+  
 <div class="description">
     <div id="male">
     <h2>MALE NAMES:</h2>
@@ -46,9 +45,7 @@
 </div>
 </div>
 <div class="confirm">
-    
-    
-    <form action="" method="post">
+    <form action="" method="post"></form>
 
         <div class="day">
             <label for="day">Enter your Birthday date here:</label>
@@ -63,17 +60,21 @@
         <input name="year" type="text" id="year" placeholder="Y.O.B" required>
         </div>
     <div class="confirm-2">
+        <div id="select">
         <p>Please select your Gender:</p>
+        
          <input type="radio" id="male" name="gender" value="male">
         <label for="male">Male</label>
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Female</label>
         <button type="submit" id="submitBtn" onclick="day()">SUBMIT</button>
-        </form>
+    </div>
 
-        <p>Your Akan Name is:</p>
+        <p id="result">Your day of birth is:</p>
+
+        <p id="akanName">Your Akan Name is:</p>
     </div>
 </div>
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
