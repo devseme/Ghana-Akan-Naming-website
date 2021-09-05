@@ -15,12 +15,12 @@ Akan names are derived from Ghanian culture.Children are given their first names
  * OUTPUT-a user gets to see his/her Akan name
  * 
 2.Displays error message if date form left blank
-   * INPUT-""
-   * OUTPUT-input required/NaN
-   * 
+   * INPUT- ""
+   * OUTPUT- input required/NaN
+   
 3.Displays error message if Gender not choosen
-    * INPUT-""
-    * OUTPUT-Displays error message  
+  * INPUT- ""
+  * OUTPUT- Displays error message  
     
 ## Known Bugs
 running the given function on JS File
