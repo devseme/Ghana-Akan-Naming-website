@@ -59,12 +59,14 @@ Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD 
                document.getElementById("akanName").textContent=answer;
               }
              
-            
+            }
             /*in case of wrong input*/
-             else  {
+               /*{
                    console.log("You entered invalid data")
 
                       alert("The data you entered is invalid.Try again!")
                         document.getElementById("akanName").textContent="You entered invalid data";
                        
-               }
+               }*/
+
+  
