@@ -30,8 +30,8 @@ Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD 
        let weekDay =( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7;
        console.log(weekDay);
             
-         document.getElementById("result").textContent=Math.round(weekDay);
-         document.getElementById("akanName").textContent=answer;
+       document.getElementById("result").textContent=Math.round(weekDay);
+         document.getElementById("akanName").value;
          
          /* Array for names*/
          let maleNames=["Kwasi","Kwadwo","Kwabena","kwaku","Yaw","Kofi","Kwame"];
@@ -44,29 +44,26 @@ Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD 
            if((choice==="male" &&(DD>0 && DD<31) && (MM>0 && MM<12) &&YY>=1)){
                   
                 console.log(maleNames(Math.round(weekDay)));
-                 //document.getElementById("akanName").textContent=maleNames[Math.round(weekDay)];
                 let answer=maleNames[Math.round(weekDay)];
-
-                document.getElementById("akanName").textContent=answer;
+                document.getElementById("akanName").innerHTML=answer;
+            
              }
 
             else if((choice==="female" &&(DD>0 && DD<31) && (MM>0 && MM<12) &&YY>=1))
                   {
                 console.log(femaleNames(Math.round(weekDay)));
-                 
-               // document.getElementById("akanName").textContent=femaleNames[Math.round(weekDay)]; 
-               // answer=femaleNames[Math.round(weekDay)];
-               document.getElementById("akanName").textContent=answer;
+               let answer=femaleNames[Math.round(weekDay)];
+               document.getElementById("akanName").innerHTML=answer;
+              
               }
              
-            }
+            
             /*in case of wrong input*/
-               /*{
+               else{
                    console.log("You entered invalid data")
 
-                      alert("The data you entered is invalid.Try again!")
-                        document.getElementById("akanName").textContent="You entered invalid data";
+                      //alert("The data you entered is invalid.Try again!");
+                       // document.getElementById("akanName").innerHTML="You entered invalid data";
                        
-               }*/
-
-  
+               }
+              }
