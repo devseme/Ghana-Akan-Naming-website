@@ -1,69 +1,144 @@
-/*
-Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
+document.getElementById("enter").addEventListener("submit", birthDay);
+function birthDay(event) {
+  //event.preventDefault();
+  var day = document.getElementById("day").value;
+  var DD = parseInt(day);
 
- where;
+  var month = document.getElementById("month").value;
+  var MM = parseInt(month);
 
- CC - is the century digits. For example 1989 has CC = 19
+  var year = document.getElementById("year").value;
+  var YY = parseInt(year);
 
- YY - is the Year digits (1989 has YY = 89)
+  var CC = (YY - 1) / 100 + 1;
 
- MM -  is the Month
+  var weekDay =
+    parseInt(CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) %
+    7;
 
- DD - is the Day of the month 
+  var maleNames = [
+    "Kwasi",
+    "Kwadwo",
+    "Kwabena",
+    "kwaku",
+    "Yaw",
+    "Kofi",
+    "Kwame",
+  ];
 
- mod - is the modulus function ( % )
- 
-      An invalid day should be (d<=0) or (d>31)
+  var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-        An invalid month should be (m<= 0) or (m > 12)  
- 
- 
- */
+  var days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  var dayOfBirth = new Date(MM + "/" + DD + "/" + YY);
+  var dayOfWeek = dayOfBirth.getDay();
 
-  function birthDay(){
-       let DD=parseInt(document.getElementById("day").value);
-       let MM=parseInt(document.getElementById("month").value);
-       let YY=parseInt(document.getElementById("year").value);
+  if (document.getElementById("sex").checked) {
+    var sex = "male";
+  } else {
+    var sex = "female";
+  }
 
-       let vv=DD=0;
-       let CC=(YY-1)/100 +1;
-       let weekDay =( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7;
-       console.log(weekDay);
-            
-       document.getElementById("result").textContent=Math.round(weekDay);
-         document.getElementById("akanName").value;
-         
-         /* Array for names*/
-         let maleNames=["Kwasi","Kwadwo","Kwabena","kwaku","Yaw","Kofi","Kwame"];
-         let femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-            
-         let choice=document.getElementById("select").value;
-         
+  if (MM < 1 || MM > 12 || (MM == 2 && dd > 29)) {
+    alert("The month you entered is invalid!");
+  } else if (DD < 1 || DD > 31) {
+    alert("You entered an invalid day of birth");
+  } else if (YY < 1900 || YY > 2021) {
+    alert("You entered an invalid year");
+  }
 
-         /*conditional statement if*/
-           if((choice==="male" &&(DD>0 && DD<31) && (MM>0 && MM<12) &&YY>=1)){
-                  
-                console.log(maleNames(Math.round(weekDay)));
-                let answer=maleNames[Math.round(weekDay)];
-                document.getElementById("akanName").innerHTML=answer;
-            
-             }
-
-            else if((choice==="female" &&(DD>0 && DD<31) && (MM>0 && MM<12) &&YY>=1))
-                  {
-                console.log(femaleNames(Math.round(weekDay)));
-               let answer=femaleNames[Math.round(weekDay)];
-               document.getElementById("akanName").innerHTML=answer;
-              
-              }
-             
-            
-            /*in case of wrong input*/
-               else{
-                   console.log("You entered invalid data")
-
-                      //alert("The data you entered is invalid.Try again!");
-                       // document.getElementById("akanName").innerHTML="You entered invalid data";
-                       
-               }
-              }
+  if (Math.round(weekDay) == 0 && sex === "male") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth is " +
+      days[dayOfWeek] +
+      ",Your Akan name is " +
+      maleName[0];
+  } else if (Math.round(weekDay) == 1 && sex === "male") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth is " +
+      days[dayOfWeek] +
+      "  ,Your akan name is " +
+      maleName[1];
+  } else if (Math.round(weekDay) == 2 && sex === "male") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth  is " +
+      days[dayOfWeek] +
+      "  ,Your akan name is " +
+      maleName[2];
+  } else if (Math.round(weekDay) == 3 && sex === "male") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth is" +
+      days[dayOfWeek] +
+      "  ,Your akan name is " +
+      maleName[3];
+  } else if (Math.round(weekDay) == 4 && sex === "male") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth is " +
+      days[dayOfWeek] +
+      "  ,Your akan name is " +
+      maleName[4];
+  } else if (Math.round(weekDay) == 5 && sex === "male") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth is " +
+      days[dayOfWeek] +
+      "  ,Your akan name is " +
+      maleName[5];
+  } else if (Math.round(weekDay) == 6 && sex === "male") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth is " +
+      days[dayOfWeek] +
+      "  ,Your akan name is " +
+      maleName[6];
+  } else if (Math.round(weekDay) == 0 && sex === "female") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth is " +
+      days[dayOfWeek] +
+      "  ,Your akan name is " +
+      femaleName[0];
+  } else if (Math.round(weekDay) == 1 && sex === "female") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth is " +
+      days[dayOfWeek] +
+      "  ,Your akan name is " +
+      femaleName[1];
+  } else if (Math.round(weekDay) == 2 && sex === "female") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth is " +
+      days[dayOfWeek] +
+      "  ,Your akan name is " +
+      femaleName[2];
+  } else if (Math.round(weekDay) == 3 && sex === "female") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth is " +
+      days[dayOfWeek] +
+      "  ,Your akan name is " +
+      femaleName[3];
+  } else if (Math.round(weekDay) == 4 && sex === "female") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth is " +
+      days[dayOfWeek] +
+      "  ,Your akan name is " +
+      femaleName[4];
+  } else if (Math.round(weekDay) == 5 && sex === "female") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth is " +
+      days[dayOfWeek] +
+      "  ,Your akan name is " +
+      femaleName[5];
+  } else if (Math.round(weekDay) == 6 && sex === "female") {
+    document.getElementById("akan").innerHTML =
+      "Your day of birth is " +
+      days[dayOfWeek] +
+      "  ,Your akan name is " +
+      femaleName[6];
+  } else {
+    alert("All fields are mandatory !");
+  }
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan Naming</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
     
@@ -50,7 +51,7 @@
 </div>
 </div>
 <div class="confirm">
-    <form action="" method="post"></form>
+    <form   id="enter">
 
         <div class="day">
             <label for="day">Enter your day of birth here:</label>
@@ -64,20 +65,22 @@
             <label for="year">Enter  year of Birth here:</label>
         <input name="year" type="text" id="year" placeholder="Y.O.B" required>
         </div>
+    
     <div class="confirm-2">
        
         <p>Please select your Gender:</p>
+
         <div id="select">
-         <input type="radio" id="male" name="gender" value="male">
+           
+         <input type="radio" id="sex" name="gender" value="male">
         <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
+        <input type="radio" id="sex" name="gender" value="female">
         <label for="female">Female</label>
-        <button type="button" id="submitBtn" onclick="birthDay()">SUBMIT</button>
+        <button type="submit"  id="submit" onclick="birthDay()" >SUBMIT</button>
     </div>
 
-        <p id="result">Your day of birth is:</p>
-
-        <p id="akanName">Your Akan Name is:</p>
+</form>
+        <p id="akan"></p>
     </div>
 </div>
 <script src="script.js"></script>
